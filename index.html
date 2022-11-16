@@ -5,10 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+
 </head>
 
 <body>
+
+    <div class="intro">
+        <div class="logo-header">
+            <span class="logo">Port</span><span class="logo">Folio.</span>
+        </div>
+    </div>
+
+    <header id="home">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo-m">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm John Joseph Omolon</h1>
+                <p>Aspiring to be <span class="job"></span></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm a BSIT graduate student from Centro Escolar University.
+                        I learned html, css, javascript, java, php and mysql.
+                        In my internship I learned about node.js and was tasked to recreate a project
+                        When I have a spare time I like to play games and watch movies.</p>
+                    <div class="tabs">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-bar">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="progress-line html"><span></span></div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="progress-line css"><span></span></div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>Java</span>
+                                </div>
+                                <div class="progress-line java"><span></span></div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>MYSQL</span>
+                                </div>
+                                <div class="progress-line mysql"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2022 - June 2022</span><br>Developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>Centro Escolar University</li>
+                            <li><span>2016 - 2018</span><br>STI</li>
+                            <li><span>2005 - 2016</span><br>St. Anthony School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
 
 </body>
 
