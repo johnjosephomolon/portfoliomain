@@ -9,6 +9,9 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
 
@@ -26,14 +29,16 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo-m">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Hi, I'm John Joseph Omolon</h1>
+                <h1>I'm John Joseph Omolon</h1>
                 <p>Aspiring to be <span class="job"></span></p>
             </div>
         </div>
@@ -58,37 +63,17 @@
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
-                        <div class="skills-bar">
-                            <div class="bar">
-                                <div class="info">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="progress-line html"><span></span></div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="progress-line css"><span></span></div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>Java</span>
-                                </div>
-                                <div class="progress-line java"><span></span></div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>MYSQL</span>
-                                </div>
-                                <div class="progress-line mysql"><span></span></div>
-                            </div>
-                        </div>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java</li>
+                            <li>MYSQL</li>
+                        </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>March 2022 - June 2022</span><br>Developer</li>
+                            <li><span>March 2022 - June 2022</span><br>Telcom Live Content Inc. | Developer</li>
                         </ul>
                     </div>
 
@@ -103,6 +88,33 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> johnjosephomolon@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="files/CV.pdf" download class="btn btn1">Download CV</a>
+                </div>
+                <div class="contact-col-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <footer class="copyright">Copyright © Pong. | All Rights Reserved</footer>
     </div>
 
 
